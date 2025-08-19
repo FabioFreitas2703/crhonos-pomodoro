@@ -1,20 +1,36 @@
-import { Heading } from './components/Heading';
-
 import './styles/theme.css'
 import './styles/global.css'
+import { Container } from './components/Container';
+import { Heading } from './components/Heading';
+import { Logo } from './components/Logo';
+import {Menu} from './components/Menu';
+
 
 
 export function App(){
-    console.log("oi");
+    return (
+        <>
+           
+            <Container>
+                <Logo/>
+            </Container>
 
-    return ( <div>
-        <Heading/>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam inventore harum dolorem sequi illum autem alias eaque natus! Placeat mollitia similique eligendi ullam possimus quisquam suscipit molestias porro. Est, sapiente.
-        </p>
-        <h2>Fabio Silva de Freitas</h2>
-        <h3>Vinicius Freitas</h3>
-    </div>
+            <Container>
+                <Menu/>
+            </Container>
+
+            <Container>
+                <Heading>Form</Heading>
+            </Container>
+
+            <Container>
+                <Heading>Footer</Heading>
+            </Container>
+                
+         
+        
+
+        </>
     );
 }
 
